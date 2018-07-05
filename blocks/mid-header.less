@@ -1,0 +1,131 @@
+.mid-header{
+  height:74px;
+  background: #fff;
+  padding-top:26px;
+
+  &__logo{
+  	float:left;
+  	width:293px;
+  	height:50px;
+  }
+
+  &__socials{
+  	width:47px;
+  	float:left;
+  }
+
+  &__social
+  {
+  	width:20px;
+  	height:20px;
+  	text-decoration:none;
+  	display:block;
+  	margin-bottom:8px;
+
+  	&--last{
+  		margin-bottom:0;
+  	}
+  }
+
+  &__search{
+  	width:504px;
+  	float:left;
+  	position:relative;
+  }
+
+  &__textinput{
+  	width:448px;
+  	height:42px;
+  	padding-left:14px;
+  	.border-radius(3px);
+  	border:2px solid @blue;
+  	outline-color: @blue;
+  	color:@blue;
+  	font-family:@fontfamily;
+  	
+  	&::placeholder{
+  		color:@blue;
+  	}
+  }
+
+  &__textbutton{
+  	position:absolute;
+  	right:74px;
+  	top:11px;
+  }
+
+  &__phone{
+  	width:208px;
+  	float:left;
+  	text-align:center;
+  }
+
+  &__cart{
+  	float:right;
+  }
+
+  &__carticon{
+  	width:40px;
+  	height:40px;
+  	background: url('../img/cart.svg');
+  	background-size:100%;
+  	display:block;
+  	margin-right:38px;
+  	position:relative;
+  	text-decoration:none;
+  	color:white;
+  	line-height:18px;
+  }
+
+  &__cartcounter{
+  	width:18px;
+  	height:18px;
+  	background: @blue;
+  	.border-radius(3px);
+  	color:white;
+  	text-align:center;
+  	font-size:12px;
+  	display:block;
+  	position:absolute;
+  	right:-8px;
+  	top:0px;
+  }
+
+  &__phonelink{
+  	color:@blue;
+  	font-weight:500;
+  	font-size:24px;
+  	text-decoration:none;
+  	letter-spacing:0.4px;
+  	display: inline-block;
+    margin-top: -1px;
+  }
+
+  &__operator{
+  	display:inline-block;
+  	background:@yellow;
+  	color:white;
+  	padding:0px 9px 0px 10px;
+  	.border-radius(3px);
+  }
+
+  &__phonenumber{
+  	display:inline-block;
+  	background:white;
+  	padding:1px 3px 1px 0px;
+  }
+
+  &__callme{
+  	 font-size: 14px;
+    text-align: center;
+    color: @blue;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid @blue;
+    display: inline-block;
+    margin-top: 3px;
+
+  }
+
+}
