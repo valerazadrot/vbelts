@@ -1,0 +1,35 @@
+.supermenu{
+  padding:0;
+  margin:0;
+
+  display: block;
+
+
+
+  &__item{
+    background: rgba(248, 195,36,0.92);
+    display: block;
+    border-bottom:1px solid #d0a423;
+    transition: background .35s ease;
+    position: relative;
+    &:hover{
+      background: rgba(209, 166, 36, 0.92);
+    }
+    &--last{
+      border-bottom:none;
+    }
+  }
+
+  &__link{
+    color:@supermenu_font_color;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+
+
+}

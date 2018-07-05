@@ -1,4 +1,48 @@
 .nav{
   background: @blue;
   height:56px;
+
+  &__catalog{
+    float:left;
+    background: @lightblue;
+    width:340px;
+    height:56px;
+    position: relative;
+  }
+
+  &__cataloglink{
+    font-size: 22px;
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 63px;
+    display: block;
+    line-height: 57px;
+  }
+
+  &__mainnav{
+    float:right;
+  }
+
+  &__link{
+    font-size:18px;
+    font-weight: 100;
+    text-decoration: none;
+    color:white;
+    line-height: 24px;
+  }
+
+  &__item{
+    display: inline-block;
+    margin-right: 17px;
+
+    &--last{
+      margin-right: 0;
+    }
+  }
+
+  &__cataloglist{
+    margin-top:-1px;
+  }
 }
