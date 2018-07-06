@@ -1,0 +1,178 @@
+.tabs{
+
+	&__header{
+		height: 50px;
+		background: @blue;
+	}
+
+	&__headul
+	{
+		padding:0;
+		margin:0;
+	}
+
+	&__headitem{
+		background: @blue;
+		float:left;
+		display: block;
+		text-align: center;
+		
+		&--active{
+			background: @yellow;
+		}
+	}
+
+	&__headlink{
+		color: white;
+	    text-transform: uppercase;
+	    text-decoration: none;
+	    font-size: 18px;
+	    padding: 15px 30px;
+	    font-weight: 100;
+	    display: block;
+	}
+
+	&__content{
+		margin-top:30px;
+	}
+
+	&__product{
+		width:234px;
+		margin-bottom: 30px;
+		float:left;
+		margin-right: 23px;
+
+		&--last{
+			margin-right: 0;
+		}
+	}
+
+	&__productinner{
+		border-top:1px solid #bccfd0;
+		border-left: 1px solid #bccfd0;
+		border-right: 1px solid #bccfd0;
+		padding:15px;
+	}
+
+	&__productnamelink{
+		font-size:16px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 300;
+		color:@blue;
+	}
+
+	&__productphoto{
+		text-align: center;
+	}
+
+	&__code{
+		margin-bottom: 10px;
+	}
+
+	&__codespan{
+		background: @lightblue;
+		.border-radius(3px);
+		padding:4px 7px;
+		color:white;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	&__manufacturer{
+		border-top:1px solid #bccfd0;
+		padding-top:10px;
+		margin-top:18px;
+		position: relative;
+		padding-left: 25px;
+	}
+
+	&__flag{
+		position: absolute;
+		left: 0;
+		top:13px;
+	}
+
+	&__stock{
+		margin-top:18px;
+		text-align: center;
+
+	}
+
+	&__manufacturername{
+		font-size:14px;
+		color:@lightblue;
+	}
+
+	&__quantity{
+		display: block;
+		position: relative;
+		text-align: center;
+		font-size:14px;
+		color:@blue;
+		text-indent: 25px;
+	}
+
+	&__productprice{
+		background: @blue;
+		border:1px solid @darkblue;
+		width:115px;
+		height: 48px;
+		float:left;
+		text-align: center;
+		color:white;
+		font-size:30px;
+		font-weight: 100;
+		line-height: 38px;
+
+	}
+
+	&__productcart{
+		float:right;
+		width:115px;
+		height: 48px;
+		background: @yellow;
+		border:1px solid #f7bb0a;
+		transition: background .35s ease-in;
+		&:hover{
+			background:#f7bb0a;
+		}
+	}
+
+	&__curr{
+		background: @lightblue;
+		color:white;
+		font-size:11px;
+		font-weight: 600;
+		text-align: center;
+		.border-radius(3px);
+		padding:2px 4px;
+	}
+
+	&__productcartlink{
+		display: block;
+		color:white;
+		text-align: center;
+		font-size:24px;
+		font-weight: 100;
+		text-decoration: none;
+		line-height: 48px;
+	}
+
+
+	
+}
+
+.stock{
+		.border-radius(50px);
+		width:18px;
+		height: 18px;
+		display: inline-block;
+		position: absolute;
+		left:25px;
+		top:0;
+
+		&--instock{
+			background: #00c586;
+		}
+	}
