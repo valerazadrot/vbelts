@@ -1,0 +1,35 @@
+.subscribe{
+  &__form{
+    position: relative;
+  }
+
+  &__input{
+    width:322px;
+  }
+
+  &__button{
+    background: @yellow;
+    display: block;
+    color:white;
+    font-weight: 100;
+    text-align: center;
+    height:50px;
+    line-height: 50px;
+    font-size:18px;
+    margin-top:20px;
+    .border-radius(3px);
+    text-decoration: none;
+    transition: background .35s ease-in;
+
+    &:hover{
+      background:@darkyellow;
+    }
+  }
+
+  &__text{
+    color:@blue;
+    font-size:14px;
+    font-weight: 300;
+  }
+
+}
