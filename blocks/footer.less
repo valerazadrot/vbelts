@@ -8,11 +8,11 @@
       margin-right: 42px;
 
       &--side{
-        width:340px;
+        width:322px;
       }
 
       &--mid{
-        width:366px;
+        width:412px;
       }
 
       &--last{
@@ -21,7 +21,7 @@
   }
 
   &__head{
-      font-size:20px;
+      font-size:17px;
       color:white;
   }
 
@@ -32,6 +32,12 @@
   &__botcategories{
     padding:0;
     margin:0;
+        display:inline-block;
+        list-style:none;
+  }
+
+  &__links{
+    margin-top:10px;
   }
 
   &__botcategoriesitem{
@@ -44,11 +50,103 @@
   }
 
   &__botlink{
+    font-size: 15px;
     color:white;
-    font-size:14px;
+    margin-right: 18px;
+    line-height:28px;
+    text-decoration:none;
+    border-bottom:1px solid #fff;
+    transition:all .3s ease-in-out;
+    &:hover{
+          color: #ffc200;
+          border-bottom: 1px solid #ffc200;
+    }
+  }
+
+  &__phonelink{
+    font-size:20px;
+  }
+
+  &__phonenumber{
+    background:none;
+    color:white
+  }
+
+  &__phone
+  {
+    &--left{
+    float:left;
+    }
+    &--right{
+    float:right;
+    }
   }
 
 
+  &__socials{
+  float:right;
+  width:70px;
+  margin-top:7px;
+  }
+
+  &__social
+  {
+    margin-left:10px;
+    display:inline-block;
+  }
+
+  &__mailsocial{
+  margin-top:10px;
+  }
+
+  &__ullinks{
+    padding:0;
+    margin:0 0 30px;
+  }
+
+
+
+  &__botlinksm{
+        font-size: 15px;
+    text-align: left;
+    color: white;
+    font-weight: 300;
+    margin-right: 12px;
+    line-height: 26px;
+     text-decoration:none;
+    border-bottom:1px solid #fff;
+    transition:all .3s ease-in-out;
+    &:hover{
+          color: #ffc200;
+          border-bottom: 1px solid #ffc200;
+    }
+  }
+
+  &__copyrights{
+  font-size:12px;
+  color:white;
+  }
+
+  &__paymenticons{
+    margin:10px 0px;
+  }
+
+  &__paymenticon{
+  margin-right:10px;
+  }
+
+  &__copyrightlink{
+  color:white;
+  }
+
+  &__copymargin{
+  margin-top:49px;
+  transition:all .3s ease-in-out;
+    &:hover{
+          color: #ffc200;
+          border-bottom: 1px solid #ffc200;
+    }
+  }
 
 
 }
