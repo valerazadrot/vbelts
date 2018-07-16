@@ -1,11 +1,140 @@
 .catalog{
+	&__left{
+		width:250px;
+		float:left;
+	}
+
+	&__categories{
+		position: static;
+		&--fixed{
+			position:fixed;
+			top:30px;
+			width:250px;
+		}
+	}
+
+	&__closeinfo{
+		position:absolute;
+		right:15px;
+		top:15px;
+	}
+
+	&__info{
+		padding:15px;
+		border:1px solid @darkblue;
+		position: relative;
+			margin-bottom:30px;
+	}
+
+	&__categoryphoto{
+		float:left;
+		margin-right: 20px;
+	}
+
+	&__categorytabs{
+		float:left;
+		width:600px;
+
+	}
+
+	&__categoryul{
+		padding:0;
+		margin:0;
+		border-bottom:1px solid #ededed;
+	}
+
+	&__categoryhtab{
+		display: none;
+		text-align: justify;
+    line-height: 16px;
+		font-size:14px;
+		padding-top: 20px;
+		&--active{
+			display: block;
+		}
+	}
+
+	&__categorylistitem{
+		display: inline-block;
+		list-style: none;
+    padding: 5px 25px 8px 0px;
+	}
+
+	&__categorylistlink{
+		display: block;
+		color:@darkblue;
+		font-size:18px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	&__categoryname{
+		position: absolute;
+		top:0;
+		left:0;
+		background:@darkblue;
+		color:white;
+		text-align: center;
+		padding:4px 8px;
+		font-size:14px;
+	}
+
+	&__categories-header{
+		background:@yellow;
+		height:50px;
+		line-height: 50px;
+		font-size:18px;
+		color:white;
+		text-transform: uppercase;
+		padding-left:15px;
+	}
+
+	&__categories-ul{
+		padding:0;
+		margin:0;
+	}
+
+	&__categoryitem{
+		display: block;
+		list-style: none;
+		background: @lemonyellow;
+		border-bottom:1px solid #e8c355;
+		transition: all .3s ease-in;
+		&:hover{
+			background:@lightblue;
+			border-bottom:1px solid @lightblue;
+		}
+		&--last{
+			border-bottom:none;
+		}
+	}
+
+	&__categorylink{
+		text-transform: uppercase;
+		color:@blue;
+		font-size:14px;
+		display: block;
+		text-decoration:none;
+		padding:15px;
+		transition: all .3s ease-in;
+
+		&:hover{
+			color:white;
+		}
+	}
+
+	&__right{
+		width:850px;
+		float:right;
+	}
+
 	&__grid{
 		margin:30px 0px;
 	}
 
 	&__gridproduct{
 	width:260px;
-	margin-right:33px;
+	margin-right:35px;
 		&--last{
 			margin-right:0;
 		}
@@ -74,7 +203,7 @@
 		background:@blue;
 		border:1px solid @darkblue;
 		transition:all .25s ease-in-out;
-		
+
 		&:hover{
 				background:@darkblue;
 		}
