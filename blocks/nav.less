@@ -8,6 +8,11 @@
     width:340px;
     height:56px;
     position: relative;
+    transition: background .3s ease-in;
+    
+    &:hover{
+    background:#4a8394;
+    }
   }
 
   &__cataloglink{
@@ -35,7 +40,8 @@
 
   &__item{
     display: inline-block;
-    margin-right: 17px;
+    margin-right: 21px;
+    padding-top: 15px;
 
     &--last{
       margin-right: 0;
@@ -44,5 +50,13 @@
 
   &__cataloglist{
     margin-top:-1px;
+    &--closed{
+        display:none;
+    }
+  }
+
+  &__list{
+  padding:0;
+  margin:0;
   }
 }

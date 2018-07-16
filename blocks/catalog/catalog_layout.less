@@ -1,0 +1,114 @@
+.catalog{
+	&__grid{
+		margin:30px 0px;
+	}
+
+	&__gridproduct{
+	width:260px;
+	margin-right:33px;
+		&--last{
+			margin-right:0;
+		}
+	}
+
+	&__productprice{
+		width:128px;
+	}
+
+	&__productcart{
+		width:128px;
+	}
+
+	&__pagination{
+		margin:0px 0px 30px;
+	}
+
+	&__showmore{
+		text-align:center;
+	}
+
+	&__showmorelink
+	{
+		display: inline-block;
+	    background: @blue;
+	    border:1px solid @darkblue;
+	    color: white;
+	    text-align: right;
+	    padding: 14px 15px 14px 99px;
+	    text-decoration: none;
+	    font-size: 17px;
+	    position:relative;
+	}
+
+	&__paginationtext{
+		text-align:center;
+		color:@lightblue;
+		font-size:15px;
+		margin:15px;
+	}
+
+	&__showicon{
+		width:24px;
+		height:24px;
+		background:url('../img/reload.svg');
+		background-size:100%;
+		position:absolute;
+		top:12px;
+		left:12px;
+	}
+
+	&__paginationlinks{
+		text-align:center;
+	}
+
+	&__paginationitems{
+		padding:0;
+		margin:0;
+	}
+
+	&__paginationitem{
+		width:34px;
+		height:34px;
+		display:inline-block;
+		margin:0px 3px;
+		background:@blue;
+		border:1px solid @darkblue;
+		transition:all .25s ease-in-out;
+		
+		&:hover{
+				background:@darkblue;
+		}
+
+
+		&--active{
+			background:@yellow;
+			border:1px solid @darkyellow;
+			&:hover{
+				background:@darkyellow;
+			}
+		}
+	}
+
+	&__paginationlink{
+		color: white;
+	    text-decoration: none;
+	    text-align: center;
+	    display: block;
+	    padding: 9px 8px;
+	    font-size: 14px;
+	}
+
+	&__paginationspan{
+			color: white;
+	    text-align: center;
+	    display: block;
+	    padding: 9px 8px;
+	    font-size: 14px;
+	}
+
+	&__seo{
+		margin-top:50px;
+		color:#859096;
+		font-size:14px;
+	}
+}

@@ -1,0 +1,135 @@
+.filter{
+	&__sort{
+		background:@blue;
+		height:50px;
+		width:100%;
+	}
+
+	&__attrs{
+		background:@lightblue;
+		height:50px;
+		width:100%;
+	}
+
+	&__sortitem{
+		padding-top: 17px;
+    	padding-left: 17px;
+    	float:left;
+    	margin-right:30px;
+	}
+
+	&__sortspan{
+		color:white;
+		font-size:15px;
+		float:left;
+		margin-right:15px;
+		margin-top:-1px;
+	}
+
+	&__sortselect{
+		float:left;
+		&--margin{
+			margin-right:12px;
+		}
+	}
+
+	&__currentsort{
+		width:100%;
+		background:@yellow;
+		color:white;
+		text-decoration:none;
+		padding:4px 25px 4px 8px;
+		position:relative;
+		font-size:15px;
+		&--blue{
+			background:@blue;
+		}
+	}
+
+	&__arrow-down{
+		 width: 13px;
+	    height: 13px;
+	    background: url(../img/down-arrow.svg);
+	    background-size: 100%;
+	    display: block;
+	    position: absolute;
+	    right: 5px;
+	    top: 7px;
+	}
+
+	&__dropdown{
+		display:none;
+	}
+
+	&__layout{
+		float:right;
+		margin-top:14px;
+	}
+
+	&__grid{
+		position:relative;
+		float:left;
+		margin-right:20px;
+	}
+
+	&__grid-icon{
+		width:24px;
+		height:24px;
+		background:url('../img/grid-blue.svg');
+		background-size:100%;
+		position:absolute;
+		left:0;
+		top:-1px;
+		&--active{
+			background: url(../img/grid-yellow.svg);
+	    	background-size:100%;
+		}
+	}
+
+	&__link{
+		color:white;
+		text-decoration:none;
+		border-bottom:1px solid white;
+		font-size:15px;
+		margin-left:34px;
+
+		&--active{
+			border-bottom:none;
+			line-height: 20px;
+		}
+	}
+
+	&__list{
+		position:relative;
+		float:left;
+		margin-right:20px;
+	}
+
+	&__list-icon{
+		width: 24px;
+	    height: 24px;
+	    background: url(../img/bar-blue.svg);
+	    background-size: 100%;
+	    position: absolute;
+	    left: 0px;
+	    top: -1px;
+
+	    &--active{
+	    	background: url(../img/bar-yellow.svg);
+	    	background-size:100%;
+	    }
+	}
+
+	&__clear{
+		float:left;
+		margin-left:30px;
+		margin-top:-2px;
+	}
+
+	&__clearlink{
+		color:white;
+		border-bottom:1px solid #fff;
+		text-decoration:none;
+		font-size:14px;
+	}
+}
